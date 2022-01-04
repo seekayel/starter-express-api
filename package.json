@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "syntax":"error missing comma and quotes
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fail":"error missing comma and quotes"
   },
   "repository": {
     "type": "git",
