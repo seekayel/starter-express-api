@@ -2,5 +2,5 @@
 
 This is the simplest possible nodejs api using express that responds to any request with: 
 ```
-Yo! => ISO8601 Timestamp
+Yo! => ${ISO8601 Timestamp}
 ```
