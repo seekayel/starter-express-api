@@ -2,9 +2,9 @@
   "name": "starter-express-api",
   "version": "1.0.0",
   "description": "",
+  "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "fail": "error missing comma and quotes"
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
