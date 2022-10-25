@@ -15,7 +15,7 @@ app.all('/', (req, res) => {
 })
 
 app.get('*', (req,res) => {
-  res.json({name: 'Silly\'z Computer'}) 
+  res.json({name: process.env.NAME}) 
 })
 
 
