@@ -13,4 +13,10 @@ app.all('/', (req, res) => {
     console.log(JSON.stringify(process.env,null,2))
     res.send(`Yarn...FTW! => ${new Date().toISOString()}`)
 })
+
+app.get('*', (req,res) => {
+  res.json({name: 'Silly\'z Computer'}) 
+})
+
+
 app.listen(process.env.PORT || 3000)
