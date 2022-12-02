@@ -8,14 +8,15 @@ app.get('/ls', (req,res) => {
   res.json(ls)
 })
 
-app.all('/', (req, res) => {
+app.all('/echo', (req, res) => {
     console.log("Just got a request!")
     console.log(JSON.stringify(process.env,null,2))
     res.send(`Yarn...FTW! => ${new Date().toISOString()}`)
 })
 
-app.get('*', (req,res) => {
-  res.json({name: process.env.NAME}) 
+app.all('*', (req,res) => {
+  console.log(JSON.stringify(req.body,null,2))
+  res.send('Ok')
 })
 
 
